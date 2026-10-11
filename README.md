@@ -24,10 +24,9 @@ An elegant, responsive personal portfolio website for **Subham Kumar**, B.Sc. in
   - **3D Card Hover Tilt**: Perspective tilt on the hero student badge card.
   - **Swaying Branch Ornament**: Delicate vector cherry blossom branch swaying in the background.
 
-- **LinkedIn Activity Stream & Feed (`#linkedin`)**:
+- **LinkedIn Activity Stream & Verified Profile (`#linkedin`)**:
   - Live showcase of Subham Kumar's academic milestones, lab insights, and project updates.
-  - Direct "Connect on LinkedIn" actions.
-  - Interactive **LinkedIn URL Manager**: Click "Update URL" directly in the UI to customize your exact vanity profile URL and save it across the portfolio.
+  - Direct "Connect on LinkedIn" actions linking to verified profile (`https://www.linkedin.com/in/subham-kumar-814711399/`).
 
 - **Verified LinkedIn Certificates Showcase (`#certificates`)**:
   - 6 verified academic and technical certifications:

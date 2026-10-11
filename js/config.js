@@ -51,8 +51,8 @@ Rather than chasing superficial buzzwords, I prioritize solid fundamentals: unde
       verified: true
     },
     linkedin: {
-      url: "https://www.linkedin.com/in/subham-kumar-28/",
-      username: "subham-kumar-28",
+      url: "https://www.linkedin.com/in/subham-kumar-814711399/",
+      username: "subham-kumar-814711399",
       displayName: "Subham Kumar",
       headline: "Student at Marwari College, Ranchi | B.Sc. AI & ML",
       verified: true,
@@ -213,7 +213,7 @@ export const certificates = [
     color: "#DB2777",
     colorBg: "rgba(219, 39, 119, 0.12)",
     accentGradient: "linear-gradient(135deg, #DB2777, #F43F5E)",
-    verificationUrl: "https://www.linkedin.com/in/subham-kumar-28/",
+    verificationUrl: "https://www.linkedin.com/in/subham-kumar-814711399/",
     verified: true
   },
   {
@@ -230,7 +230,7 @@ export const certificates = [
     color: "#2563EB",
     colorBg: "rgba(37, 99, 235, 0.12)",
     accentGradient: "linear-gradient(135deg, #2563EB, #60A5FA)",
-    verificationUrl: "https://www.linkedin.com/in/subham-kumar-28/",
+    verificationUrl: "https://www.linkedin.com/in/subham-kumar-814711399/",
     verified: true
   },
   {
@@ -247,7 +247,7 @@ export const certificates = [
     color: "#059669",
     colorBg: "rgba(5, 150, 105, 0.12)",
     accentGradient: "linear-gradient(135deg, #059669, #34D399)",
-    verificationUrl: "https://www.linkedin.com/in/subham-kumar-28/",
+    verificationUrl: "https://www.linkedin.com/in/subham-kumar-814711399/",
     verified: true
   },
   {
@@ -264,7 +264,7 @@ export const certificates = [
     color: "#0284C7",
     colorBg: "rgba(2, 132, 199, 0.12)",
     accentGradient: "linear-gradient(135deg, #0284C7, #38BDF8)",
-    verificationUrl: "https://www.linkedin.com/in/subham-kumar-28/",
+    verificationUrl: "https://www.linkedin.com/in/subham-kumar-814711399/",
     verified: true
   },
   {
@@ -281,7 +281,7 @@ export const certificates = [
     color: "#D97706",
     colorBg: "rgba(217, 119, 6, 0.12)",
     accentGradient: "linear-gradient(135deg, #D97706, #FBBF24)",
-    verificationUrl: "https://www.linkedin.com/in/subham-kumar-28/",
+    verificationUrl: "https://www.linkedin.com/in/subham-kumar-814711399/",
     verified: true
   },
   {
@@ -298,7 +298,7 @@ export const certificates = [
     color: "#7C3AED",
     colorBg: "rgba(124, 58, 237, 0.12)",
     accentGradient: "linear-gradient(135deg, #7C3AED, #A78BFA)",
-    verificationUrl: "https://www.linkedin.com/in/subham-kumar-28/",
+    verificationUrl: "https://www.linkedin.com/in/subham-kumar-814711399/",
     verified: true
   }
 ];

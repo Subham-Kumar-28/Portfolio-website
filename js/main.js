@@ -767,7 +767,7 @@ function openCertModal(c) {
 const LINKEDIN_URL_KEY = 'subham_kumar_linkedin_url';
 
 function getLinkedInUrl() {
-  return localStorage.getItem(LINKEDIN_URL_KEY) || personalInfo.social.linkedin.url;
+  return personalInfo.social.linkedin.url;
 }
 
 function updateLinkedInLinks(url) {

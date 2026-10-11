@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Page Metadata & SEO -->
+    <title>Subham Kumar | B.Sc. AI & ML Portfolio</title>
+    <meta name="description" content="Personal portfolio of Subham Kumar, B.Sc. Artificial Intelligence and Machine Learning student at Marwari College, Ranchi exploring AI, ML, and Data Analytics." />
+    <meta name="keywords" content="Subham Kumar, Artificial Intelligence, Machine Learning, Data Analytics, Marwari College Ranchi, Python, Portfolio, Sakura, LinkedIn" />
+    <meta name="author" content="Subham Kumar" />
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Subham Kumar | B.Sc. AI & ML Portfolio" />
+    <meta property="og:description" content="Personal portfolio of Subham Kumar, B.Sc. Artificial Intelligence and Machine Learning student at Marwari College, Ranchi exploring AI, ML, and Data Analytics." />
+    <meta property="og:site_name" content="Subham Kumar Portfolio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Subham Kumar | B.Sc. AI & ML Portfolio" />
+    <meta name="twitter:description" content="Personal portfolio of Subham Kumar, B.Sc. Artificial Intelligence and Machine Learning student at Marwari College, Ranchi exploring AI, ML, and Data Analytics." />
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Subham Kumar",
+      "jobTitle": "Undergraduate Student (B.Sc. AI & ML)",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Marwari College, Ranchi"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ranchi",
+        "addressRegion": "Jharkhand",
+        "addressCountry": "India"
+      },
+      "email": "mailto:myselfsubhamkumar@gmail.com",
+      "sameAs": [
+        "https://github.com/Subham-Kumar-28/",
+        "https://www.linkedin.com/in/subham-kumar-28/"
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Data Analytics",
+        "Python",
+        "C++",
+        "SQL",
+        "Arduino Hardware"
+      ]
+    }
+    </script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Skip to Content for Keyboard Users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Falling Sakura Canvas -->
+    <canvas id="sakura-canvas" aria-hidden="true"></canvas>
+
+    <!-- Floating Sakura Botanical Branch Vector Ornament -->
+    <svg class="sakura-branch-ornament" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M200 0C170 30 140 35 110 50C80 65 60 90 20 110C-10 125 -5 140 -20 160" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity="0.6"></path>
+      <path d="M120 45C100 30 80 25 60 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5"></path>
+      <path d="M80 75C60 85 40 95 10 90" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"></path>
+      <!-- Blossoms -->
+      <circle cx="110" cy="50" r="10" fill="var(--color-sakura-deep)" opacity="0.8"></circle>
+      <circle cx="60" cy="20" r="9" fill="var(--color-accent)" opacity="0.85"></circle>
+      <circle cx="20" cy="110" r="11" fill="var(--color-sakura-deep)" opacity="0.8"></circle>
+      <circle cx="70" cy="80" r="8" fill="var(--color-accent)" opacity="0.75"></circle>
+      <circle cx="140" cy="35" r="7" fill="var(--color-sakura-petal)" opacity="0.9"></circle>
+      <circle cx="10" cy="90" r="7" fill="var(--color-accent)" opacity="0.85"></circle>
+    </svg>
+
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="container header-container">
+        <!-- Zone 1: Wordmark Brand -->
+        <a href="#home" class="brand-mark" aria-label="Subham Kumar - Portfolio Home">
+          <span class="brand-icon-sakura" aria-hidden="true">🌸</span>
+          <span>Subham Kumar</span>
+        </a>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav class="nav-menu" aria-label="Primary Navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#certificates" class="nav-link">Certificates</a>
+          <a href="#linkedin" class="nav-link">LinkedIn</a>
+          <a href="#github" class="nav-link">GitHub</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Zone 3: Actions -->
+        <div class="header-actions">
+          <!-- Petal Animation Control Menu -->
+          <div class="petal-controls-dropdown">
+            <button id="petal-menu-btn" class="action-btn" type="button" aria-label="Sakura petal animation settings" title="Sakura Petals Motion">
+              <span id="petal-icon" aria-hidden="true">🌸</span>
+            </button>
+            <div id="petal-preset-menu" class="petal-preset-menu" role="menu" aria-label="Sakura Animation Modes">
+              <button class="petal-option-btn active" data-petal-mode="gentle" role="menuitem">
+                <span>🌸 Gentle Breeze</span>
+              </button>
+              <button class="petal-option-btn" data-petal-mode="swirl" role="menuitem">
+                <span>🍃 Sakura Swirl</span>
+              </button>
+              <button class="petal-option-btn" data-petal-mode="shower" role="menuitem">
+                <span>🌨️ Blossom Flurry</span>
+              </button>
+              <button class="petal-option-btn" data-petal-mode="pause" role="menuitem">
+                <span>⏸️ Pause Petals</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Multi-Theme Palette Menu -->
+          <div class="theme-selector-dropdown">
+            <button id="theme-menu-btn" class="action-btn" type="button" aria-label="Choose color theme" title="Color Themes">
+              <span id="theme-icon" aria-hidden="true">🎨</span>
+            </button>
+            <div id="theme-palette-menu" class="theme-palette-menu" role="menu" aria-label="Theme Selection">
+              <button class="theme-option-btn" data-theme-id="light" role="menuitem">
+                <span class="theme-dot" style="background: #F472B6;"></span>
+                <span>Sakura Spring (Light)</span>
+              </button>
+              <button class="theme-option-btn" data-theme-id="dark" role="menuitem">
+                <span class="theme-dot" style="background: #0C0A0E; border-color: #F472B6;"></span>
+                <span>Midnight Sakura (Dark)</span>
+              </button>
+              <button class="theme-option-btn" data-theme-id="sunset" role="menuitem">
+                <span class="theme-dot" style="background: #FB7185;"></span>
+                <span>Sunset Twilight</span>
+              </button>
+              <button class="theme-option-btn" data-theme-id="matcha" role="menuitem">
+                <span class="theme-dot" style="background: #059669;"></span>
+                <span>Matcha Zen</span>
+              </button>
+              <button class="theme-option-btn" data-theme-id="cyber" role="menuitem">
+                <span class="theme-dot" style="background: #FF2A85;"></span>
+                <span>Cyber Blossom</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Contact Me CTA -->
+          <a href="#contact" class="cta-btn-nav">
+            <span>Contact Me</span>
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-btn" class="action-btn mobile-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true"></div>
+    <div id="mobile-nav-panel" class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <div class="mobile-nav-header">
+        <div class="brand-mark">
+          <span class="brand-icon-sakura" aria-hidden="true">🌸</span>
+          <span>Subham Kumar</span>
+        </div>
+        <button id="mobile-nav-close-btn" class="action-btn" type="button" aria-label="Close navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link">🌸 Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">📖 About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">⚡ Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">💼 Projects</a></li>
+        <li><a href="#certificates" class="mobile-nav-link">📜 Certificates</a></li>
+        <li><a href="#linkedin" class="mobile-nav-link">💼 LinkedIn Activity</a></li>
+        <li><a href="#github" class="mobile-nav-link">🐙 GitHub</a></li>
+        <li><a href="#contact" class="mobile-nav-link">✉️ Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a id="mobile-linkedin-btn" href="https://www.linkedin.com/in/subham-kumar-28/" target="_blank" rel="noopener noreferrer" class="btn-linkedin" style="width: 100%; justify-content: center;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          <span>LinkedIn Profile</span>
+        </a>
+        <a href="https://github.com/Subham-Kumar-28/" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="width: 100%; justify-content: center;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <span>GitHub Profile</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- 1. Hero Section -->
+      <section id="home" class="section hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-kicker-cluster">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>B.Sc. Artificial Intelligence & Machine Learning</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Hi, I'm <span class="hero-title-name">Subham Kumar</span>
+            </h1>
+
+            <p class="hero-headline">
+              B.Sc. AI & ML Student | Exploring AI, Machine Learning & Data Analytics
+            </p>
+
+            <p class="hero-intro">
+              I'm pursuing a B.Sc. in Artificial Intelligence and Machine Learning at Marwari College, Ranchi. I enjoy exploring technology and developing practical projects as I continue learning.
+            </p>
+
+            <div class="hero-meta-strip">
+              <span>Marwari College, Ranchi</span>
+              <span class="meta-separator" aria-hidden="true">·</span>
+              <span>Ranchi, Jharkhand, India</span>
+              <span class="meta-separator" aria-hidden="true">·</span>
+              <span>Undergraduate Studies</span>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary">
+                <span>Explore Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+
+              <!-- LinkedIn Profile Action -->
+              <a id="hero-linkedin-link" href="https://www.linkedin.com/in/subham-kumar-28/" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <a href="#contact" class="btn-secondary">
+                <span>Contact Me</span>
+              </a>
+
+              <a href="https://github.com/Subham-Kumar-28/" target="_blank" rel="noopener noreferrer" class="btn-icon-link" aria-label="Visit Subham Kumar's GitHub Profile" title="GitHub: Subham-Kumar-28">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Art Card with 3D Tilt -->
+          <div class="hero-art-frame">
+            <div class="hero-art-card" id="hero-tilt-card">
+              <div class="student-badge-avatar" aria-label="Subham Kumar Initials">
+                <span>SK</span>
+              </div>
+              <h2 class="art-card-name">Subham Kumar</h2>
+              <p class="art-card-role">B.Sc. Student in AI & ML</p>
+
+              <div class="art-card-info-list">
+                <div class="art-card-info-row">
+                  <span class="art-card-info-label">College</span>
+                  <span class="art-card-info-value">Marwari College</span>
+                </div>
+                <div class="art-card-info-row">
+                  <span class="art-card-info-label">Location</span>
+                  <span class="art-card-info-value">Ranchi, Jharkhand</span>
+                </div>
+                <div class="art-card-info-row">
+                  <span class="art-card-info-label">Interests</span>
+                  <span class="art-card-info-value">AI, ML & Analytics</span>
+                </div>
+                <div class="art-card-info-row">
+                  <span class="art-card-info-label">LinkedIn</span>
+                  <span class="art-card-info-value" style="color: #0A66C2; font-weight: 600;">Connected & Active</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Background & Journey</span>
+            </div>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-description">
+              A genuine look into my undergraduate studies, technical interests, and hands-on learning path.
+            </p>
+          </div>
+
+          <div class="about-content-grid">
+            <div class="about-narrative-card">
+              <p class="about-text">
+                I am an undergraduate student pursuing my B.Sc. in Artificial Intelligence and Machine Learning at Marwari College, Ranchi. My academic journey is dedicated to understanding how intelligent systems, statistical models, and modern software architectures function from the ground up.
+              </p>
+              <p class="about-text">
+                Rather than claiming premature industry mastery, I approach technology with an honest curiosity: studying mathematical fundamentals, experimenting with exploratory data analysis in Python, and exploring practical hardware circuits with Arduino.
+              </p>
+              <p class="about-text">
+                I believe in building real understanding through patient trial, disciplined documentation, and incremental progress. Every project and certification represents verifiable learning.
+              </p>
+            </div>
+
+            <div class="about-highlights-card">
+              <h3 class="about-card-title">
+                <span>Academic Overview</span>
+              </h3>
+              
+              <div class="about-fact-list">
+                <div class="about-fact-item">
+                  <span class="about-fact-label">Degree</span>
+                  <span class="about-fact-val">B.Sc. in Artificial Intelligence & Machine Learning</span>
+                </div>
+                <div class="about-fact-item">
+                  <span class="about-fact-label">Institution</span>
+                  <span class="about-fact-val">Marwari College, Ranchi</span>
+                </div>
+                <div class="about-fact-item">
+                  <span class="about-fact-label">Core Focus Areas</span>
+                  <span class="about-fact-val">AI Models, ML Algorithms, Data Analytics</span>
+                </div>
+              </div>
+
+              <div>
+                <span class="about-fact-label" style="display: block; margin-bottom: 0.75rem;">Representative Coursework</span>
+                <ul class="coursework-list">
+                  <li class="coursework-item">Machine Learning & Statistical Logic</li>
+                  <li class="coursework-item">Data Analytics & Exploratory Data Analysis</li>
+                  <li class="coursework-item">Programming in Python and C/C++</li>
+                  <li class="coursework-item">Relational Databases & SQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Skills Section -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Competencies & Coursework</span>
+            </div>
+            <h2 class="section-title">Technical Foundation</h2>
+            <p class="section-description">
+              Foundational tools and languages studied through coursework and lab experiments. Cleanly presented without arbitrary percentages or unsupported expert rankings.
+            </p>
+          </div>
+
+          <div id="skills-container" class="skills-grid"></div>
+
+          <div class="authenticity-note">
+            <svg class="authenticity-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <div>
+              <strong>Curriculum Grounding:</strong> Skills listed reflect subjects covered in B.Sc. coursework and laboratory assignments. Configurable directly in <code>/js/config.js</code>.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Projects Section -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Practical Applications</span>
+            </div>
+            <h2 class="section-title">Projects & Explorations</h2>
+            <p class="section-description">
+              Practical investigations into web systems, data visualization, and microcontroller automation. Entries are marked with their actual verification status.
+            </p>
+          </div>
+
+          <div id="project-filters" class="project-filters" role="tablist" aria-label="Project Category Filters"></div>
+
+          <div id="projects-container" class="projects-grid"></div>
+        </div>
+      </section>
+
+      <!-- 5. Certificates Section (LinkedIn Verified Showcase) -->
+      <section id="certificates" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Verified Credentials</span>
+            </div>
+            <h2 class="section-title">Certifications & Credentials</h2>
+            <p class="section-description">
+              Academic certifications and specialized credentials verified on LinkedIn covering Artificial Intelligence, Machine Learning, Python, SQL, and Data Analytics.
+            </p>
+          </div>
+
+          <!-- Category Filters for Certificates -->
+          <div id="cert-filters" class="cert-filter-bar" role="tablist" aria-label="Certificate Category Filters"></div>
+
+          <!-- Certificate Grid -->
+          <div id="certificates-grid" class="cert-grid"></div>
+        </div>
+      </section>
+
+      <!-- 6. LinkedIn Activity & Feed Section -->
+      <section id="linkedin" class="section linkedin-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Professional Network</span>
+            </div>
+            <h2 class="section-title">LinkedIn Activity & Insights</h2>
+            <p class="section-description">
+              Academic milestones, laboratory experiments, and project reflections shared on LinkedIn as part of my learning journey.
+            </p>
+          </div>
+
+          <!-- LinkedIn Profile Banner -->
+          <div class="linkedin-profile-banner">
+            <div class="linkedin-author-block">
+              <div class="linkedin-avatar-badge" aria-hidden="true">in</div>
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-text-primary); margin-bottom: 0.25rem;" id="linkedin-author-name">
+                  Subham Kumar
+                </h3>
+                <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0.25rem;">
+                  Student at Marwari College, Ranchi · B.Sc. in Artificial Intelligence & Machine Learning
+                </p>
+                <div style="font-size: 0.8125rem; color: var(--color-text-muted);">
+                  📍 Ranchi, Jharkhand, India · Actively Learning & Building
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+              <a id="linkedin-banner-link" href="https://www.linkedin.com/in/subham-kumar-28/" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>Connect on LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Dynamic LinkedIn Posts Grid -->
+          <div id="linkedin-feed-grid" class="linkedin-feed-grid"></div>
+        </div>
+      </section>
+
+      <!-- 7. GitHub Live Repositories Section -->
+      <section id="github" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Open Source & Code</span>
+            </div>
+            <h2 class="section-title">GitHub Activity</h2>
+            <p class="section-description">
+              Real public repositories retrieved dynamically from the official GitHub API for <strong>Subham-Kumar-28</strong>.
+            </p>
+          </div>
+
+          <div class="github-profile-card">
+            <div class="github-profile-info">
+              <div class="github-avatar-box" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div>
+                <h3 class="github-profile-name">Subham Kumar</h3>
+                <span class="github-profile-handle">@Subham-Kumar-28</span>
+              </div>
+            </div>
+
+            <a href="https://github.com/Subham-Kumar-28/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <span>View Profile on GitHub</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+
+          <div id="github-repos-container" class="github-repos-grid">
+            <div class="repo-state-box">
+              <p>Fetching repositories from GitHub API...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Get in Touch</span>
+            </div>
+            <h2 class="section-title">Contact Subham Kumar</h2>
+            <p class="section-description">
+              Have an academic inquiry, collaborative project idea, or learning question? Send a message directly.
+            </p>
+          </div>
+
+          <div class="contact-layout-grid">
+            <div class="contact-info-panel">
+              <div class="contact-card-direct">
+                <h3 class="contact-direct-title">Verified Email Address</h3>
+                <p class="about-text" style="margin-bottom: 0.75rem; font-size: 0.9375rem;">
+                  Direct email communication with Subham Kumar:
+                </p>
+                <div class="contact-email-display" id="display-email">myselfsubhamkumar@gmail.com</div>
+
+                <div class="contact-direct-actions">
+                  <button id="copy-email-btn" class="btn-secondary" type="button" aria-label="Copy email address to clipboard">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    <span>Copy Email</span>
+                  </button>
+
+                  <a id="mailto-direct-link" href="mailto:myselfsubhamkumar@gmail.com" class="btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <span>Open Mail Client</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-location-card">
+                <div class="location-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 600; color: var(--color-text-muted);">Current Location</div>
+                  <div style="font-weight: 700; color: var(--color-text-primary);">Ranchi, Jharkhand, India</div>
+                  <div style="font-size: 0.8125rem; color: var(--color-text-secondary);">Marwari College Campus Area</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-card">
+              <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--color-text-primary);">Send a Message</h3>
+              <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+                Fill out the details below. If the server email transport is not yet configured, the system provides an immediate 1-click fallback to your mail client.
+              </p>
+
+              <div id="form-status-alert" class="form-status-alert" role="alert"></div>
+
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name <span style="color: var(--color-accent);">*</span></label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Aditi Sharma" required autocomplete="name" />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email <span style="color: var(--color-accent);">*</span></label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. name@example.com" required autocomplete="email" />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject <span style="color: var(--color-accent);">*</span></label>
+                  <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Project Inquiry or Discussion" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Message <span style="color: var(--color-accent);">*</span></label>
+                  <textarea id="contact-message" name="message" class="form-textarea" placeholder="Write your message here (minimum 10 characters)..." required></textarea>
+                  <div class="form-helper-text">Your message will be sent to myselfsubhamkumar@gmail.com</div>
+                </div>
+
+                <button id="contact-submit-btn" type="submit" class="btn-primary" style="width: 100%;">
+                  <span>Send Message</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <span class="footer-name">Subham Kumar</span>
+            <span class="footer-tagline">B.Sc. Artificial Intelligence & Machine Learning · Marwari College, Ranchi</span>
+          </div>
+
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="#home" class="footer-nav-link">Home</a>
+            <a href="#about" class="footer-nav-link">About</a>
+            <a href="#skills" class="footer-nav-link">Skills</a>
+            <a href="#projects" class="footer-nav-link">Projects</a>
+            <a href="#certificates" class="footer-nav-link">Certificates</a>
+            <a href="#linkedin" class="footer-nav-link">LinkedIn</a>
+            <a href="#github" class="footer-nav-link">GitHub</a>
+            <a href="#contact" class="footer-nav-link">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © <span id="current-year" class="tabular-nums">2026</span> Subham Kumar. All rights reserved.
+          </div>
+          <div class="footer-sakura-motto">
+            <span>🌸 Sakura Multi-Theme · Interactive Animations</span>
+          </div>
+          <div style="display: flex; gap: 1rem;">
+            <a id="footer-linkedin-link" href="https://www.linkedin.com/in/subham-kumar-28/" target="_blank" rel="noopener noreferrer" style="color: #0A66C2; font-weight: 600;">
+              LinkedIn
+            </a>
+            <span class="meta-separator" aria-hidden="true">·</span>
+            <a href="https://github.com/Subham-Kumar-28/" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-weight: 500;">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Project Details Inspection Modal -->
+    <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-project-title">
+      <div class="modal-card">
+        <button id="modal-close-btn" class="modal-close-btn" type="button" aria-label="Close project details dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+
+        <div id="modal-category" class="project-category-meta">Category</div>
+        <h2 id="modal-project-title" class="project-card-title" style="font-size: 1.5rem; margin-bottom: 1rem;">Project Title</h2>
+
+        <div class="modal-status-banner">
+          <div id="modal-status-badge" class="modal-status-title">Status: Draft / Verification in Progress</div>
+          <div id="modal-status-text" class="modal-status-text">Verification details note</div>
+        </div>
+
+        <div id="modal-description" style="font-size: 0.9375rem; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 1.25rem;"></div>
+
+        <h3 class="modal-section-title">Technical Highlights & Architecture</h3>
+        <ul id="modal-highlights" class="modal-highlights-list"></ul>
+
+        <h3 class="modal-section-title">Verification Checklist for Subham Kumar</h3>
+        <ul id="modal-checklist" class="modal-checklist-list"></ul>
+
+        <div style="margin-top: 2rem; display: flex; justify-content: flex-end; gap: 0.75rem;">
+          <button id="modal-done-btn" type="button" class="btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificate Inspection Modal -->
+    <div id="cert-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cert-modal-title">
+      <div class="modal-card">
+        <button id="cert-modal-close-btn" class="modal-close-btn" type="button" aria-label="Close certificate dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+
+        <div id="cert-modal-icon" style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎓</div>
+        <h2 id="cert-modal-title" class="project-card-title" style="font-size: 1.4rem; margin-bottom: 0.35rem;">Certificate Title</h2>
+        <div id="cert-modal-issuer" style="font-weight: 600; color: var(--color-accent); margin-bottom: 1rem;">Issuer</div>
+
+        <div style="background: var(--color-surface-hover); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem; margin-bottom: 1.25rem; font-size: 0.875rem;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+            <span style="color: var(--color-text-muted);">Verification Status:</span>
+            <span style="font-weight: 600; color: var(--color-status-success-text);">✓ Verified on LinkedIn</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+            <span style="color: var(--color-text-muted);">Credential ID:</span>
+            <span id="cert-modal-id" class="tabular-nums" style="font-weight: 600; color: var(--color-text-primary);">ID</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span style="color: var(--color-text-muted);">Issue Date:</span>
+            <span id="cert-modal-date" style="font-weight: 600; color: var(--color-text-primary);">Date</span>
+          </div>
+        </div>
+
+        <h3 class="modal-section-title">Demonstrated Skills & Core Competencies</h3>
+        <ul id="cert-modal-skills" class="modal-highlights-list"></ul>
+
+        <div style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; gap: 0.75rem;">
+          <a id="cert-modal-linkedin-link" href="https://www.linkedin.com/in/subham-kumar-28/" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
+            <span>Verify on LinkedIn</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+          <button id="cert-modal-done-btn" type="button" class="btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast-notice" class="toast-notice" role="status" aria-live="polite">
+      Copied email to clipboard!
+    </div>
+
+    <!-- Application Script -->
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
